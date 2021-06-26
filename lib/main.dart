@@ -12,15 +12,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome to Flutter'),
-        ),
-        body: Center(                       // Drop the const, and
-          //child: Text('Hello World'),     // Replace this text...
-          child: RandomWords(),  // With this text.
-        ),
-      ),
+      home: RandomWords()
     );
   }
 }
