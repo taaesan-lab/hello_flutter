@@ -16,6 +16,10 @@ class ScaffoldExample extends StatelessWidget {
               icon: Icon(Icons.add_box_rounded))
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(items:[
+        BottomNavigationBarItem(icon: Icon(Icons.addchart), label: "First"),
+        BottomNavigationBarItem(icon: Icon(Icons.architecture), label: "Second")
+      ]),
       body: Container(
         alignment: Alignment.center,
         child: Column(
