@@ -15,7 +15,7 @@ class CustomButton extends StatelessWidget {
         padding: EdgeInsets.all(10.0),
         decoration: BoxDecoration(
             color: Colors.amber, borderRadius: BorderRadius.circular(8.0)),
-        child: Text('Button'),
+        child: Text('Custom Button'),
       ),
     );
   }
