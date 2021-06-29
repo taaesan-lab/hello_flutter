@@ -35,11 +35,32 @@ class _QuoteWidgetState extends State<QuoteWidget> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(_quotes[_index % _quotes.length]),
-            TextButton.icon(
-                onPressed: _showQuote,
-                icon: Icon(Icons.wb_sunny),
-                label: Text("Inspire Me!"))
+            Container(
+                width: 400,
+                height: 200,
+                margin: EdgeInsets.all(30.0),
+                decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.circular(14.5)),
+                child: Center(
+                    child: Text(
+                  _quotes[_index % _quotes.length],
+                  style: TextStyle(fontSize: 14, fontStyle: FontStyle.italic),
+                ))),
+            Divider(thickness: 1.3),
+            Padding(
+              padding: const EdgeInsets.only(top: 18.0),
+              child: TextButton.icon(
+                  onPressed: _showQuote,
+                  icon: Icon(Icons.wb_sunny),
+                  label: Text("Inspire Me!"),
+                  style: TextButton.styleFrom(
+                    primary: Colors.white,
+                    backgroundColor: Colors.amber.shade800,
+                    textStyle: const TextStyle(fontSize: 20),
+                  )),
+            ),
+            Spacer()
           ],
         ),
         alignment: FractionalOffset(0.5, 0.5),
