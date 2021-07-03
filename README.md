@@ -4,8 +4,18 @@ A new Flutter project.
 
 ## Getting Started
 
+Day 6 - Movie List  
+- ListView.builder  
+- Card  
+  - elevation  
+- ListTile  
+  - subTitle  
+- Route : Every screen in FT has route  
+- Navigator.push and Navigator.pop  
+  - MaterialPageRoute  
 
-Day 5 - BillCalculator application
+
+Day 5 - BillCalculator application  
 MediaQuery Widget to calculate the remaining space dynamically on any device.  
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=xbHMJza-dJw
