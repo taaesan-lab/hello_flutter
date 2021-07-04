@@ -14,6 +14,7 @@ Day 6 - Movie List
 - Navigator.push and Navigator.pop  
   - MaterialPageRoute  
 - Container is the 1st choice to build flexible ui.  
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=dzurFfnw01A
 " target="_blank"><img src="http://img.youtube.com/vi/dzurFfnw01A/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
