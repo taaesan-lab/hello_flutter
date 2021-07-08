@@ -2,7 +2,13 @@
 
 A new Flutter project.
 
-## Getting Started
+Day 7 - Theme  
+- ThemeData  
+- TextTheme
+  - apply function
+- Custom font
+- TextButtonThemeData
+
 
 Day 6 - Movie List  
 - ListView.builder  

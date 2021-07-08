@@ -30,7 +30,8 @@ class _QuoteWidgetState extends State<QuoteWidget> {
       appBar: AppBar(
           title: Text('Quote', textDirection: TextDirection.ltr),
           centerTitle: true,
-          backgroundColor: Colors.amber.shade800),
+          // backgroundColor: Colors.amber.shade800
+      ),
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -45,7 +46,7 @@ class _QuoteWidgetState extends State<QuoteWidget> {
                 child: Center(
                     child: Text(
                   _quotes[_index % _quotes.length],
-                  style: TextStyle(fontSize: 14, fontStyle: FontStyle.italic),
+                  // style: TextStyle(fontSize: 14, fontStyle: FontStyle.italic),
                 ))),
             Divider(thickness: 1.3),
             Padding(
@@ -54,11 +55,12 @@ class _QuoteWidgetState extends State<QuoteWidget> {
                   onPressed: _showQuote,
                   icon: Icon(Icons.wb_sunny),
                   label: Text("Inspire Me!"),
-                  style: TextButton.styleFrom(
-                    primary: Colors.white,
-                    backgroundColor: Colors.amber.shade800,
-                    textStyle: const TextStyle(fontSize: 20),
-                  )),
+                  // style: TextButton.styleFrom(
+                  //   // primary: Colors.white,
+                  //   // backgroundColor: Colors.amber.shade800,
+                  //   textStyle: const TextStyle(fontSize: 20),
+                  // )
+              ),
             ),
             Spacer()
           ],
