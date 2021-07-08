@@ -10,7 +10,7 @@ import 'ui/day7/custom_theme.dart';
 
 
 void main() => runApp(new MaterialApp(
-      theme: buildAppTheme(),
+      // theme: buildAppTheme(),
       // theme: ThemeData(
       //   brightness: Brightness.dark,
       //   primaryColor: Colors.pinkAccent,

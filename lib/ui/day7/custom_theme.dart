@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 ThemeData buildAppTheme() {
   final ThemeData base = ThemeData.dark();
   return base.copyWith(
-      brightness: Brightness.light,
+      brightness: Brightness.dark,
       accentColor: Colors.amber,
       primaryColor: Colors.green,
       scaffoldBackgroundColor: Colors.grey,
