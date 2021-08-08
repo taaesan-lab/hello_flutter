@@ -1,23 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 
-class AnimateTruck extends StatefulWidget {
-  const AnimateTruck({Key? key}) : super(key: key);
+class AnimateJeep extends StatefulWidget {
+  const AnimateJeep({Key? key}) : super(key: key);
 
   @override
-  _AnimateTruckState createState() => _AnimateTruckState();
+  _AnimateJeepState createState() => _AnimateJeepState();
 }
 
-class _AnimateTruckState extends State<AnimateTruck> {
-  SMITrigger? _bump;
+class _AnimateJeepState extends State<AnimateJeep> {
+  SMIBool? _bump;
   String message = "";
 
   void _onRiveInit(Artboard artboard) {
-    final controller = StateMachineController.fromArtboard(artboard, 'bumpy',
+    final controller = StateMachineController.fromArtboard(artboard, 'weather',
         onStateChange: _onStateChange);
     artboard.addController(controller!);
-    _bump = controller.findInput<bool>('bump') as SMITrigger;
-    debugPrint("xxx");
+    // _bump = controller.findInput<bool>('Raining') as SMITrigger;
+
+    for (final input in controller.inputs) {
+      _bump = input as SMIBool;
+    }
+
+    debugPrint('xxx');
   }
 
   void _onStateChange(
@@ -25,21 +30,22 @@ class _AnimateTruckState extends State<AnimateTruck> {
     String stateName,
   ) =>
       setState(
-        () => debugPrint('State Changed in $stateMachineName to $stateName'),
+        () => debugPrint('Changed: $stateMachineName to $stateName'),
       );
 
-  void _hitBump() => {setState(() => _bump?.fire())};
+  void _hitBump() => {setState(() => _bump!.value = !(_bump!.value))};
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Simple Animation'),
+        title: const Text('Jeep Animation'),
       ),
       body: Center(
         child: GestureDetector(
           child: RiveAnimation.asset(
             'assets/vehicles.riv',
+            artboard: "Jeep",
             fit: BoxFit.fitHeight,
             onInit: _onRiveInit,
           ),

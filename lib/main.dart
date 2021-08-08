@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_flutter/ui/day9/animate_jeep.dart';
 // import 'package:hello_flutter/ui/day6/movie_list.dart';
 // import 'package:hello_flutter/ui/day4/quote_of_the_day.dart';
 // import 'package:hello_flutter/ui/day8/mortgage_app.dart';
@@ -19,6 +20,6 @@ void main() => runApp(new MaterialApp(
       // home: RandomWords()
       // home: ScaffoldExample()
       // home: MortgageApp(),
-      home: AnimateTruck(),
+      home: AnimateJeep(),
       debugShowCheckedModeBanner: false,
     ));
