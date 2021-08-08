@@ -2,6 +2,16 @@
 
 A new Flutter project.
 
+
+https://youtu.be/N_mFCD4CZq0
+
+Day 9 - Animation with Rive  
+- StateMachineController
+  <a href="http://www.youtube.com/watch?feature=player_embedded&v=N_mFCD4CZq0
+  " target="_blank"><img src="http://img.youtube.com/vi/N_mFCD4CZq0/0.jpg"
+  alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+
 Day 7 - Theme  
 - ThemeData  
 - TextTheme
